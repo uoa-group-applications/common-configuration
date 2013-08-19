@@ -1,85 +1,85 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>nz.ac.auckland</groupId>
-    <artifactId>uoa-java-parent</artifactId>
-    <version>1.5</version>
-  </parent>
+	<parent>
+		<groupId>nz.ac.auckland</groupId>
+		<artifactId>uoa-java-parent</artifactId>
+		<version>1.5</version>
+	</parent>
 
-  <groupId>nz.ac.auckland.common</groupId>
-  <artifactId>common-configuration</artifactId>
-  <packaging>jar</packaging>
+	<groupId>nz.ac.auckland.common</groupId>
+	<artifactId>common-configuration</artifactId>
+	<packaging>jar</packaging>
 
-  <name>common-configuration</name>
-  <version>2.6-SNAPSHOT</version>
-  <description>Provides Spring config and ServerConfig necessary to support configuration</description>
+	<name>common-configuration</name>
+	<version>2.6-SNAPSHOT</version>
+	<description>Provides Spring config and ServerConfig necessary to support configuration</description>
 
-  <dependencies>
+	<dependencies>
 
-    <dependency>
-      <groupId>nz.ac.auckland.composite</groupId>
-      <artifactId>composite-configuration</artifactId>
-      <version>[3,)</version>
-    </dependency>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-configuration</artifactId>
+			<version>[3,)</version>
+		</dependency>
 
-    <dependency>
-      <groupId>net.stickycode.configuration</groupId>
-      <artifactId>sticky-configuration</artifactId>
-      <version>[1.5, 2)</version>
-      <exclusions>
-        <exclusion>
-          <groupId>net.stickycode.composite</groupId>
-          <artifactId>sticky-composite-logging-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
+		<dependency>
+			<groupId>net.stickycode.configuration</groupId>
+			<artifactId>sticky-configuration</artifactId>
+			<version>[1.5, 2)</version>
+			<exclusions>
+				<exclusion>
+					<groupId>net.stickycode.composite</groupId>
+					<artifactId>sticky-composite-logging-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
-    <dependency>
-      <groupId>nz.ac.auckland.composite</groupId>
-      <artifactId>composite-spring</artifactId>
-      <version>[4,)</version>
-    </dependency>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-spring</artifactId>
+			<version>[4,)</version>
+		</dependency>
 
-    <dependency>
-      <groupId>nz.ac.auckland.composite</groupId>
-      <artifactId>composite-logging-api</artifactId>
-      <version>[2,)</version>
-    </dependency>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-logging-api</artifactId>
+			<version>[2,)</version>
+		</dependency>
 
-    <dependency>
-      <groupId>nz.ac.auckland.composite</groupId>
-      <artifactId>composite-servlet</artifactId>
-      <version>[1,)</version>
-      <scope>provided</scope>
-    </dependency>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-servlet</artifactId>
+			<version>[1,)</version>
+			<scope>provided</scope>
+		</dependency>
 
-    <dependency>
-      <groupId>nz.ac.auckland.composite</groupId>
-      <artifactId>composite-spring-web</artifactId>
-      <version>[4,)</version>
-      <scope>provided</scope>
-    </dependency>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-spring-web</artifactId>
+			<version>[4,)</version>
+			<scope>provided</scope>
+		</dependency>
 
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-      <version>2.4</version>
-    </dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
 
-    <dependency>
-      <groupId>nz.ac.auckland.composite</groupId>
-      <artifactId>composite-unittest</artifactId>
-      <version>[2,3)</version>
-      <scope>test</scope>
-    </dependency>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-unittest</artifactId>
+			<version>[2,3)</version>
+			<scope>test</scope>
+		</dependency>
 
-    <dependency>
-      <groupId>nz.ac.auckland.composite</groupId>
-      <artifactId>composite-logging-deploy</artifactId>
-      <version>[3,)</version>
-      <scope>test</scope>
-    </dependency>
+		<dependency>
+			<groupId>nz.ac.auckland.composite</groupId>
+			<artifactId>composite-logging-deploy</artifactId>
+			<version>[3,)</version>
+			<scope>test</scope>
+		</dependency>
 
-  </dependencies>
+	</dependencies>
 </project>
