@@ -12,14 +12,15 @@
 	<packaging>jar</packaging>
 
 	<name>common-configuration</name>
-	<version>2.6-SNAPSHOT</version>
+	<version>2.6</version>
 	<description>Provides Spring config and ServerConfig necessary to support configuration</description>
 	
 	<scm>
 		<url>https://github.com/uoa-group-applications/common-configuration</url>
 		<connection>scm:git:https://github.com/uoa-group-applications/common-configuration.git</connection>
 		<developerConnection>scm:git:git@github.com:uoa-group-applications/common-configuration.git</developerConnection>
-	</scm>
+	  <tag>common-configuration-2.6</tag>
+  </scm>
 
 	<dependencies>
 
