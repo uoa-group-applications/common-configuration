@@ -2,9 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>nz.ac.auckland</groupId>
-		<artifactId>uoa-java-parent</artifactId>
-		<version>1.5</version>
+		<groupId>nz.ac.auckland.groupapps.parent</groupId>
+		<artifactId>parent-java-groupapps-central</artifactId>
+		<version>1.1</version>
 	</parent>
 
 	<groupId>nz.ac.auckland.common</groupId>
@@ -14,6 +14,12 @@
 	<name>common-configuration</name>
 	<version>2.6-SNAPSHOT</version>
 	<description>Provides Spring config and ServerConfig necessary to support configuration</description>
+	
+	<scm>
+		<url>https://github.com/uoa-group-applications/common-configuration</url>
+		<connection>scm:git:https://github.com/uoa-group-applications/common-configuration.git</connection>
+		<developerConnection>scm:git:git@github.com:uoa-group-applications/common-configuration.git</developerConnection>
+	</scm>
 
 	<dependencies>
 
