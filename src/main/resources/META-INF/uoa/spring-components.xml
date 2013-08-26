@@ -20,4 +20,5 @@
   <bean class="nz.ac.auckland.common.config.SystemPropertiesConfigurationSource"/>
   <bean class="nz.ac.auckland.common.config.JarManifestConfigurationSource"/>
   <bean class="nz.ac.auckland.common.config.ConfigKeyPostProcessor"/>
+  <bean class="nz.ac.auckland.common.config.ConfigurationRefresher"/> <!-- automatically start the configuration -->
 </beans>
