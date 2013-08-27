@@ -27,9 +27,6 @@ public class InjectionTest {
 
     ApplicationContext ctx = new ClassPathXmlApplicationContext("/test.xml");
 
-    StickyBootstrap sb = ctx.getBean(StickyBootstrap.class);
-    sb.start();
-
     SampleConfiguredClass sample = ctx.getBean(SampleConfiguredClass.class);
 
     assertThat(sample.armpit).isEqualTo("armpit");
