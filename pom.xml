@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -13,14 +13,14 @@
 	<packaging>jar</packaging>
 
 	<name>common-configuration</name>
-	<version>3.2-SNAPSHOT</version>
+	<version>3.2</version>
 	<description>Provides Spring config and ServerConfig necessary to support configuration</description>
 	
 	<scm>
 		<url>https://github.com/uoa-group-applications/common-configuration</url>
 		<connection>scm:git:https://github.com/uoa-group-applications/common-configuration.git</connection>
 		<developerConnection>scm:git:git@github.com:uoa-group-applications/common-configuration.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>common-configuration-3.2</tag>
   </scm>
 
 	<dependencies>
