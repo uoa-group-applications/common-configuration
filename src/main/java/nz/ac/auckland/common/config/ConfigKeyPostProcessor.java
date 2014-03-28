@@ -1,6 +1,7 @@
 package nz.ac.auckland.common.config;
 
 import net.stickycode.configured.ConfigurationRepository;
+import net.stickycode.configured.ForMethodOnlyBeansDummyAttribute;
 import net.stickycode.metadata.MetadataResolverRegistry;
 import net.stickycode.reflector.Reflector;
 import net.stickycode.stereotype.Configured;
@@ -19,6 +20,9 @@ public class ConfigKeyPostProcessor extends InstantiationAwareBeanPostProcessorA
 	@Override
 	public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
 		if (typeIsConfigured(bean.getClass())) {
+			// fake a single attribute
+			configurationRepository.register(new ForMethodOnlyBeansDummyAttribute(bean));
+
 			new Reflector()
 				.forEachField(new ConfigKeyProcessor(configurationRepository))
 				.process(bean);

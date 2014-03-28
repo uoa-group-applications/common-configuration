@@ -73,7 +73,7 @@ public class ConfigKeyProcessor extends AnnotatedFieldProcessor {
 
 			@Override
 			public boolean requiresResolution() {
-				return resolution != null;
+				return resolution == null;
 			}
 
 			@Override
