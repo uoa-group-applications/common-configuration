@@ -13,7 +13,7 @@
 	<packaging>jar</packaging>
 
 	<name>common-configuration</name>
-	<version>3.3-SNAPSHOT</version>
+	<version>3.4-SNAPSHOT</version>
 	<description>Provides Spring config and ServerConfig necessary to support configuration</description>
 	
 	<scm>
