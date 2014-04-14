@@ -73,7 +73,11 @@ public class ConfigKeyProcessor extends AnnotatedFieldProcessor {
 
 			@Override
 			public boolean requiresResolution() {
-				return resolution == null;
+				// this change to a weird, inefficient request seems necessary otherwise
+				// it won't return the right value!
+				boolean value = (resolution == null);
+
+				return value;
 			}
 
 			@Override
